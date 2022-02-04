@@ -443,8 +443,8 @@ google_adsense:
 # --------------------------------------
 
 site_verification:
-  # - name: google-site-verification
-  #   content: xxxxxx
+  - name: google-site-verification
+    content: RwPKePnLdqFUBBBN_xSFIoPiUqbG7H2FoOWA8yPoXPw
   # - name: baidu-site-verification
   #   content: xxxxxxx
 
