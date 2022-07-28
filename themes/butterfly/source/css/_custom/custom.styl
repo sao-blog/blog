@@ -1,0 +1,143 @@
+/* 页脚透明 */
+#footer
+  background transparent !important
+/* 头图透明 */
+#page-header
+  background transparent !important
+
+// 日间全局透明度
+#recent-posts
+  & > .recent-post-item
+    background rgba(255, 255, 255, 0.9)
+
+
+.card-widget
+  background rgba(255, 255, 255, 0.9)!important
+
+div#post
+  background rgba(255, 255, 255, 0.9)
+
+div#page
+  background rgba(255, 255, 255, 0.9)
+
+div#archive
+  background rgba(255, 255, 255, 0.9)
+
+div#tag
+  background rgba(255, 255, 255, 0.9)
+
+div#category
+  background rgba(255, 255, 255, 0.9)
+
+
+// 夜间全局透明度
+
+
+[data-theme="dark"]
+  div#runtime
+      color rgb(40, 180, 200)
+      box-shadow 0 0 5px rgba(28, 69, 218, 0.71)
+      animation flashlight 1s linear infinite alternate
+  #recent-posts
+    & > .recent-post-item
+      background rgba(35, 35, 35, 0.5)
+  div.card-widget
+    background rgba(35, 35, 35, 0.5)!important
+  div#post
+    background rgba(35, 35, 35, 0.5)
+  div#page
+    background rgba(35, 35, 35, 0.5)
+  div#archive
+    background rgba(35, 35, 35, 0.5)
+  div#tag
+    background rgba(35, 35, 35, 0.5)
+  div#category
+    background rgba(35, 35, 35, 0.5)
+  #footer::before
+    background transparent!important
+  #page-header::before
+    background transparent!important
+  @media screen and (max-width: 900px)
+    #card-toc
+      background rgba(35,35,35,0.9)!important
+
+// 滚动条
+::-webkit-scrollbar
+  width 8px
+  height 8px
+
+::-webkit-scrollbar-track
+  background-color rgba(245, 119, 73, 0.2)
+  border-radius 2em
+
+::-webkit-scrollbar-thumb
+  background-color #fa6e52
+  background-image -webkit-linear-gradient(45deg,
+    rgba(255, 255, 255, 0.4) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.4) 75%,
+    transparent 75%,
+    transparent)
+  border-radius 2em
+
+::-webkit-scrollbar-corner
+  background-color transparent
+
+::-moz-selection
+  color #fff
+  background-color #fa6e52
+
+//修改錨點icon
+#article-container
+  a.headerlink:after
+    content '\f292'
+
+
+#aside-content
+  #card-toc
+    .toc-content
+      .toc-link
+        border-left: 3px solid transparent
+
+#aside-content
+  #card-toc
+    .toc-content
+      .toc-link.active
+        border-left-color #f57749
+
+// 文章封面圖修改
+
+.imgHover, .article-sort-item-img img, #recent-posts > .recent-post-item .post_cover img.post_bg, #aside-content .aside-list > .aside-list-item .thumbnail > img 
+  object-position 50% 8%
+
+
+// 輪播文章封面圖修改
+.blog-slider__item.swiper-slide-active .blog-slider__img img
+  object-position 50% 8%
+
+// 取消首頁標題
+#site-info
+  #site-title
+    display none!important
+
+//上一篇下一篇文章封面圖位置
+#pagination 
+  img
+    object-position 50% 30%
+
+//相關文章封面圖位置
+.relatedPosts-list img {
+    object-position: 50% 8%;
+}
+
+//404頁面相關文章封面位置
+.aside-list 
+  img
+    object-position 50% 8%
+
+//標籤圖片敘述文字置中
+.img-wrap {
+    text-align: center;
+}

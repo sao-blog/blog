@@ -14,7 +14,7 @@ script.
         repo: '!{theme.gitalk.repo}',
         owner: '!{theme.gitalk.owner}',
         admin: ['!{theme.gitalk.admin}'],
-        id: '!{md5(page.path)}',
+        id: document.title,
         updateCountCallback: commentCount
       },!{JSON.stringify(theme.gitalk.option)}))
 

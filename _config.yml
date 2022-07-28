@@ -3,22 +3,23 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Blog
+title: 唯一のBlog
 subtitle: '這雖然是遊戲，但可不是鬧著玩的'
 description: ''
 keywords:
 author: ǼǾՖ唯一ی
+email: only@sao.dsmynas.com
 language: zh-TW
 timezone: 'Asia/Taipei'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://sao-blog.github.io
-permalink: :year/:month/:day/:title/
+url: https://sao-coding.github.io
+permalink: post/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  trailing_html: false # Set to false to remove trailing '.html' from permalinks
 
 # Directory
 source_dir: source
@@ -91,6 +92,7 @@ pagination_dir: page
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
 include:
+  - .nojekyll
 exclude:
 ignore:
 
@@ -103,5 +105,79 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/sao-blog/sao-blog.github.io.git
-  branch: main #目前最新的預設 branch 是 main，若原本的 branch 為 master，則輸入 master
+  repo: https://sao-cdoing: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@github.com/sao-coding/sao-coding.github.io.git,main #https://github.com/sao-coding/sao-coding.github.io.git
+  #branch: main #目前最新的預設 branch 是 main，若原本的 branch 為 master，則輸入 master
+  ignore_hidden: false
+
+sitemap:
+  path: sitemap.xml
+
+markdown:
+  render: # 渲染器設置
+    html: true # 過濾 HTML 標籤
+    xhtmlOut: true # 使用 '/' 來閉合單標籤 （比如 <br />）。
+    breaks: true # 轉換段落裏的 '\n' 到 <br>。
+    linkify: true # 將類似 URL 的文本自動轉換為鏈接。
+    typographer: 
+    quotes: '“”‘’'
+  plugins: # markdown-it 插件設置
+    - markdown-it-emoji
+    - plugin:
+      name: '@neilsustc/markdown-it-katex'
+      options:
+        strict: false
+  anchors:
+    # Minimum level for ID creation. (Ex. h2 to h6)
+    level: 1
+    # A suffix that is prepended to the number given if the ID is repeated.
+    collisionSuffix: ''           
+    # If `true`, creates an anchor tag with a permalink besides the heading.
+    permalink: true              
+    # Class used for the permalink anchor tag.
+    permalinkClass: headerlink
+    # Set to 'right' to add permalink after heading
+    permalinkSide: 'left'
+    # The symbol used to make the permalink
+    permalinkSymbol: ""
+    # Transform anchor to (1) lower case; (2) upper case
+    case: 0
+    # Replace space with a character
+    separator: '-'
+
+bangumis:
+  css: https://cdn.jsdelivr.net/gh/sao-coding/blog@main/plugin/hexo-tag-bangumi/hexo-tag-bangumi.css
+
+bangumi: # 追番設置
+  enable: true
+  source: bgm #bili
+  path:
+  vmid: 662066 #480955363
+  title: '追番列表'
+  quote: '生命不息，追番不止'
+  show: 1
+  lazyload: true
+  loading:
+  metaColor:
+  color:
+  webp:
+  progress:
+  extra_options:
+    key: value
+
+feed:
+  enable: true
+  type: 
+    - atom
+    - rss2
+  path: 
+    - atom.xml
+    - rss2.xml
+  limit: 0
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: https://cdn.jsdelivr.net/gh/sao-coding/sao-coding.github.io/img/avatar.jpg
+  autodiscovery: true
+  template:

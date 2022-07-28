@@ -35,7 +35,8 @@ header#page-header(class=isHomeClass style=bg_img)
       include ./post-info.pug
     else if is_home() 
       #site-info
-        //h1#site-title=site_title 取消首頁標題
+        //- 取消首頁標題
+        h1#site-title=site_title
         if theme.subtitle.enable
           - var loadSubJs = true
           #site-subtitle

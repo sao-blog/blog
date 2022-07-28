@@ -19,6 +19,12 @@
     //- page
     !=partial('includes/widget/card_author', {}, {cache: true})
     !=partial('includes/widget/card_announcement', {}, {cache: true})
+    //- pixiv
+    if theme.aside.card_pixiv
+      include ./card_pixiv.pug
+    //- 文章日曆
+    if theme.aside.card_calendar
+      include ./card_calendar.pug
     !=partial('includes/widget/card_top_self', {}, {cache: true})      
 
     .sticky_layout

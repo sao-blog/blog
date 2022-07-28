@@ -1,0 +1,38 @@
+- class_name: 艾恩葛朗特
+  class_desc: ⚔️
+  link_list:
+    - name: ǼǾՖ唯一ی
+      link: https://sao-coding.github.io
+      avatar: https://cdn.jsdelivr.net/gh/sao-coding/sao-coding.github.io/img/avatar.jpg
+      siteshot: #https://cdn.jsdelivr.net/gh/sao-coding/blog-gitalk/page/blog.png
+      descr: 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 ​𝙩𝙝𝙚 𝙎𝙬𝙤𝙧𝙙 𝘼𝙧𝙩 𝙊𝙣𝙡𝙞𝙣𝙚
+
+    - name: ǼǾՖ唯一ی
+      link: https://sao.dsmynas.com
+      avatar: https://cdn.jsdelivr.net/gh/sao-coding/sao-coding.github.io/img/avatar.jpg
+      siteshot: #https://cdn.jsdelivr.net/gh/sao-coding/blog-gitalk/page/note.png
+      descr: 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 ​𝙩𝙝𝙚 𝙎𝙬𝙤𝙧𝙙 𝘼𝙧𝙩 𝙊𝙣𝙡𝙞𝙣𝙚
+
+- class_name: 博客的大佬們
+  class_desc:
+  link_list:
+    - name: Akilarの糖果屋
+      link: https://akilar.top/
+      avatar: https://npm.elemecdn.com/akilar-candyassets/image/siteicon/favicon.png
+      siteshot: https://cdn.jsdelivr.net/gh/Akilarlxh/ScreenShot@gh-pages/akilar.top.jpg
+      descr: 期待您的光臨！
+    - name: Zrn Code
+      link: https://zrn-code.github.io
+      avatar: https://zrn-code.github.io/images/avatar.jpg
+      siteshot:
+      descr: 再苦再累也要堅強，只為那些期待眼神
+    - name: 忽然筆記
+      link: https://blog.huran.xyz
+      avatar: https://img.huran.xyz/avatar.png
+      siteshot: 
+      descr: 長風破浪會有時，直掛雲帆濟滄海
+    - name: 王先森
+      link: https://www.boysec.cn
+      avatar: https://images.boysec.cn/medias/avatar.jpg
+      descr: 運維與安全從業者！
+      siteshot: https://cdn.jsdelivr.net/gh/5279314/ScreenShot@gh-pages/www.boysec.cn.jpg
