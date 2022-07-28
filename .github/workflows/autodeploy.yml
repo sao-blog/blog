@@ -56,9 +56,8 @@ jobs:
       run: |
         git config --global user.name "sao-coding"
         git config --global user.email "jeter.nice@gmail.com"
-        git clone https://github.com/sao-coding/sao-coding.github.io.git .deploy_git
+        git clone https://github.com/sao-blog/sao-blog.github.io.git .deploy_git
         # 此处务必用HTTPS链接。SSH链接可能有权限报错的隐患
         # =====注意.deploy_git前面有个空格=====
         # 这行指令的目的是clone博客静态文件仓库，防止Hexo推送时覆盖整个静态文件仓库，而是只推送有更改的文件
         hexo deploy
-        surge ./public ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
